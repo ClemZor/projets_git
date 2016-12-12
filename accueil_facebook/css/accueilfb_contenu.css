@@ -1,0 +1,89 @@
+body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  flex:1;
+}
+/* general */
+.contenu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background : linear-gradient(to top, #D7DCEA, white);
+}
+.gauche {
+  background-color: red;
+  width: 430px;
+}
+.droite {
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+/*titres droite */
+h2:first-child{
+  margin-bottom: 10px;
+}
+h7:first-of-type {
+  margin: 0 0 20px 0;
+}
+/* gestion input formulaire */
+
+#prenom_ins, #nom_ins {
+  width: 150px;
+  padding: 5px;
+}
+#id_ins, #conf_id_ins, #nouv_mdp {
+  width: 330px;
+  padding: 5px;
+}
+
+/* placement date de naissance  */
+.date_naissance {
+  margin: 0 0 7px 0;
+}
+.date_champ  {
+  width: 70px;
+  margin-right: 0;
+}
+.date_pourquoi{
+  background-color: black;
+}
+
+/* couleur champ prérempli */
+#inscription input {
+  color:#99999C;
+}
+/* mise en forme police naissance */
+.date_champ {
+  font-size: 12px;
+}
+/* mise en forme date_pourquoi */
+.date_pourquoi {
+  font-size: 10px;
+  color: #4B80D7;
+}
+/* mise en forme message condition utilisation */
+#date_naissance p:last-of-type {
+  font-size: 10px;
+  color: #99999C;
+}
+/* mise en forme bouton inscription */
+#date_naissance input:last-child {
+  background: linear-gradient(to bottom, #94D67B, #578843);
+  color: #FFFFFF;
+  border: 1px solid #2C5115;
+  border-radius: 5px;
+  width: 170px;
+  height: 35px;
+}
+/* mise en forme page celebre */
+.droite p:last-child {
+  font-size: 11px;
+}

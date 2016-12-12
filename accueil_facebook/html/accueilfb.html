@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8"/>
+  <link href='../css/accueilfb_header.css' rel='stylesheet' type='text/css'>
+  <link href='../css/accueilfb_contenu.css' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
+    <title> PageBook </title>
+</head>
+
+<body>
+  <header>
+<!-- partie logo -->
+    <div class="fb_titre">
+      <h1> <a href="https://fr-fr.facebook.com/"> facebook </a> </h1>
+
+    </div>
+<!-- partie connexion -->
+    <div class="form_co">
+      <form action="" method="">
+          <label for="identifiant"> Adresse e-mail ou mobile </label><br>
+                <INPUT type="text" id="identifiant">
+      </form>
+      <form id="ajust_mdp" action="" method="">
+         <label for="mdp">Mot de passe </label><br>
+             <INPUT type="text" id="mdp">
+        <a id="info_co" href="pasdebol.html">Informations de compte oubliées ?</a>
+      </form>
+      <div id="bouton_co">
+         <input type="button" name="Bouton_co" VALUE="Connexion">
+      </div>
+
+  </div>
+
+  </header>
+<!-- site divisé en deux parties -->
+<main class="contenu">
+<!-- partie gauche  titre+ image -->
+  <div class="gauche">
+      <h4>Avec Facebook, partagez et restez en contact avec votre entourage.</h4>
+      <img alt="bug img" src="https://static.xx.fbcdn.net/rsrc.php/v3/yx/r/pyNVUg5EM0j.png">
+  </div>
+
+<!-- partie droite inscription/formulaire -->
+<div class="droite">
+    <h2>Inscription</h2>
+    <h7>  C’est gratuit (et ça le restera toujours) </h7>
+
+      <form id="inscription" action="" method="">
+          <INPUT type="text" id="prenom_ins" placeholder="Prénom">
+          <INPUT type="text" id="nom_ins" placeholder="Nom de famille">
+            <p><INPUT type="text" id="id_ins" placeholder="Numéro de mobile ou e-mail"></p>
+            <p><INPUT type="text" id="conf_id_ins" placeholder="Confirmer numéro de mobile ou e-mail"></p>
+            <p><INPUT type="text" id="nouv_mdp" placeholder="Nouveau mot de passe"></p>
+      </form>
+    <h5 class="date_naissance" > Date de naissance</h5>
+      <form id="date_naissance" action="" method="">
+        <SELECT class="date_champ" name="jour" size="1" >
+          <option selected>Jour
+          <option>De 1 à 10
+          <option>De 11 à 20
+          <option>De 21 à 31
+        </SELECT>
+        <SELECT class="date_champ" name="mois" size="1" >
+          <option selected>Mois
+          <option>jan/mars
+          <option>avr/jui
+          <option>juil/sept
+          <optionon>oct/dec
+        </SELECT>
+        <SELECT class="date_champ" name="année" size="1" >
+          <option selected>Année</option>
+          <option>18e
+          <option>19e
+          <option>20e
+          <option>21e
+        </SELECT>
+        <label class="date_pourquoi">Pourquoi indiquer ma date de naissance ?</label>
+        <p><label for="sexe">
+          <INPUT type="radio" id="femme"><label for="femme">Femme</label>
+          <INPUT type="radio" id="homme"><label for="homme">Homme</label>
+        </label>
+      </p>
+        <p>En cliquant sur Inscription, vous acceptez nos Conditions et<br>
+              indiquez que vous avez lu notre Politique d’utilisation des<br>
+              données, y compris notre Utilisation des cookies.
+        </p>
+        <input type="button" name="bouton_inscription" value="Inscription">
+      </form>
+
+        <p>Créer une Page pour une célébrité, un groupe ou une entreprise.</p>
+
+</div> <!-- fin div_droite -->
+
+  </body>
+</html>

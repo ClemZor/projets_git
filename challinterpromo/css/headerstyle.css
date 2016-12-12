@@ -1,0 +1,65 @@
+header {
+  height: 700px;
+  background-image: url(header.png);
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  /*background-repeat: no-repeat;*/
+}
+nav {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  /*background-color: yellow;*/
+  width: 100%;
+  justify-content: space-between;
+}
+ /* gestion logo */
+.logo {
+  padding-top: 10px;
+  padding-left: 30px;
+
+}
+
+/* gestion ZEN */
+.zen  {
+  /*background-color: black;*/
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  margin-top: 40px;
+  font-size: 80px;
+}
+
+/* gestion liste */
+
+.liens {
+  margin : 25px;
+  /*background-color: red;*/
+  float: right;
+}
+.liens ul{
+  margin: 0;
+  padding: 0;
+
+}
+.liens ul li{
+  display: inline;
+  list-style: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  float: right;
+  padding: 10px;
+}
+
+.liens ul a {
+  text-decoration: none;
+
+}
+.liens ul a:visited {
+  text-decoration: none;
+
+}

@@ -1,0 +1,85 @@
+body {
+  margin : 0 auto;
+  padding: 0;
+  background-color: rgb(187, 174, 205);
+}
+
+#titre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #bdc3c7;
+}
+
+#titre .trait_haut{
+    width: 150px;
+    border-bottom: 3px solid #f1c40f;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+#titre .trait_bas {
+    width: 150px;
+    border-top: 3px solid #f1c40f;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+#titre h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  font-size: 50px;
+}
+
+.ligne_1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.div_gauche{
+  background-color: #FFFFFF;
+  width: 600px;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+.div_droite{
+  background-color: #FFFFFF;
+  width: 600px;
+  border-radius: 10px;
+  padding: 10px;
+}
+#container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#container div {
+  margin: 20px;
+}
+#bouton_dec {
+  display: flex;
+  justify-content: flex-end;
+}
+#bouton_dec input {
+  color : #FFFFFF;
+  background-color: rgb(184, 16, 182);
+  border-radius: 30px;
+  font-size: 20px;
+  padding: 20px 40px;
+  border: 0px;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+p {
+  font-size: 19px;
+}
+
+.img_message
+{
+  float: right;
+
+}

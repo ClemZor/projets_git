@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!--
+Welcome to this Back-to-School Postcard Remix! This activity will teach you how
+to read and write the Web to share some of your likes, dislikes, and feelings
+about school with your teacher.
+
+This Back-to-School Postcard Remix is adapted from Kim Wilkens's winter postcard
+project at https://techkim.makes.org/thimble/hack-the-holiday-card
+-->
+
+    <meta name="author" content="Kim Wilkens">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Postcard Remix</title>
+
+    <!--
+Step 5. Mess around with the code.
+*****************************************************
+
+Here is where you can try to change the fonts.
+
+Go to www.google.com/fonts to find new fonts. Click on Quick-use and copy the code under " Add this code to your website:". Then go find the font-family parts of the stylesheet and update them with the names of your new fonts. Two-word names should be separated by a space and be inside quotes.
+-->
+
+    <!--
+Here are the links that call in our Google fonts for the page. When you change these fonts, be sure to add an 's' to each 'http' for a more secure
+link that keeps your page from getting taken over by someone else.
+-->
+
+    <!--This is the big font under the h1 part of the stylesheet and page.-->
+
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+   <!-- police du button et infos bas de page -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+    <!--This is the font that looks more like handwriting for the back of the postcard.-->
+
+    <link href='https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise' rel='stylesheet' type='text/css'>
+
+    <!--
+Step 4. Change the predictions
+*****************************************************
+
+As you level up your web skills, you can save scripts as separate files to use on several pages at once. For now, we've left the script here so you can see how it fits into a webpage and how it connects to the button in the body of your page, which is the part that shows up in your browser.
+-->
+
+<script>
+    var answers = [ "Super merci !", "Tant pis pour vous...", "Je n'ai pas compris votre demande; merci de re-cliquer ultérieurement." ];
+
+    function question() {
+
+       var choix = prompt("Cool ou pas cool ?").toUpperCase();
+
+       if ( choix === "COOL") {
+         return answers[0];
+       }
+       else if (choix === "PAS COOL") {
+         return answers[1];
+       }
+       else {
+         return answers[2];
+       }
+       }
+    </script>
+
+
+    <style>
+      body {
+        padding: 0 20px;
+        color: black;
+        background-color: #FF8C00;
+        text-align: center;
+        margin: 0;
+        height: 100vh;
+      }
+
+      .wrapper {
+        position: relative;
+        z-index: 1;
+        -webkit-perspective: 1000px;
+        perspective: 1000px;
+        display: block;
+        margin: 60px auto 40px auto;
+      }
+
+      .card {
+        width: 750px;
+        max-width: 100%;
+        margin: 0 auto;
+        border: 8px solid white;
+        box-sizing: border-box;
+        border-radius: 4px;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transition: all 1s linear 0s;
+        -moz-transition: all 1s linear 0s;
+        -o-transition: all 1s linear 0s;
+        -ms-transition: all 1s linear 0s;
+        transition: all 1s linear 0s;
+        -webkit-box-shadow: 0px 0px 10px #aaa;
+        box-shadow: 0px 0px 10px #aaa;
+      }
+
+      .wrapper:hover .card {
+        -webkit-transform: rotateX(180deg);
+        -moz-transform: rotateX(180deg);
+        -o-transform: rotateX(180deg);
+        -ms-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+      }
+
+      .face {
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      /* Step 2. Change the Image */
+
+      .front {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #ffd800;
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Simplonpass1.JPG/280px-Simplonpass1.JPG');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .back {
+        background-color: #FFE4B5;
+        color: #333;
+        font-family: 'Waiting for the Sunrise', monospace;
+        font-size: 20px;
+        -webkit-transform: rotateX(180deg);
+        -moz-transform: rotateX(180deg);
+        -o-transform: rotateX(180deg);
+        -ms-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+      }
+
+      h1 {
+        font-family: 'Gloria Hallelujah', cursive;
+        color: black;
+        text-transform: uppercase;
+        text-shadow: 4px 4px 3px #FF8C00;
+        font-size: 48px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        max-width: 90%;
+        display: inline-block;
+        margin : 7px;
+      }
+
+      p {
+        margin: 0 0 1em 0;
+      }
+
+      .message {
+        text-align: left;
+        width: 50%;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        min-height: 475px;
+        position: relative;
+      }
+
+      .message:after {
+        content: "";
+        position: absolute;
+        border-right: solid 2px black;
+        height: 70%;
+        top: 15%;
+        right: 0;
+      }
+
+      .message p:first-child {
+        margin-top: 45px;
+      }
+
+      .address {
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-align: left;
+        padding: 130px 20px 0 20px;
+        width: 50%;
+        box-sizing: border-box;
+      }
+
+      .address:after {
+        content: "";
+        position: absolute;
+        height: 65px;
+        width: 65px;
+        border: dashed 2px red;
+        background-color: #00B070;
+        right: 20px;
+        top: 20px;
+      }
+
+      .address p:first-child {
+        background-color: red;
+        position:absolute;
+        right: 25px;
+        top: 28px;
+        z-index: 1;
+        margin: 0, auto;
+        height: 55px;
+        text-align: center;
+
+      }
+
+      .place_adresse {
+       position: relative;
+       margin: 40px 0 30px 0;
+      }
+
+      .ligne_adresse {
+        border-bottom: solid black;
+        margin : 25px 0 25px 0;
+      }
+
+      #myButton {
+        background-color: #ffd800;
+        border: 1px solid black;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 16px;
+        color: #000;
+        cursor: pointer;
+      }
+
+      #myAnswer {
+        background-color: transparent;
+        border: 0px solid white;
+        font-family: 'Gloria Hallelujah', cursive;
+        font-size: 16px;
+        color:#000;
+      }
+
+      #predictions{
+        font-size: 20px;
+      }
+
+      #credits {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 12px;
+        color: black;
+        text-align: left;
+      }
+
+      a {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 12px;
+        color: black;
+      }
+
+      .passage {
+        background-color: red;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+
+      <!-- The 'card' <div> wraps around both the front and back sides. -->
+
+      <div class="card">
+
+        <!--
+Step 1. Change the message on the front of the card
+****************************************************
+Write what you want to say on the front of the card. Use the CSS to change the size and color.
+-->
+
+        <div class="front face">
+          <h1> La prog au grand air !</h1>
+        </div>
+
+        <!-- The back of the card -  you only see it when the card flips -->
+        <div class="back face">
+
+          <!--
+Step 3. Change the note on the back of the card
+*****************************************************
+Add your teacher's name. Then add 3 things you want your teacher to know about you. Finally, change the last line so it's from you, but only use your first initial. Never give out too much information online.
+-->
+
+          <div class="message">
+            <p> Bien le bonjour, </p>
+            <p> Visez un peu votre nouveau spot !</p>
+            <ul>
+              <li>de l'air pure</li>
+              <li>propice pour se ressourcer</li>
+              <li>et des marmottes !</li>
+            </ul>
+            <p> C'est y pas beau ?!</p>
+          </div>
+          <!-- School-year predictions -->
+          <div class="address">
+            <p>
+              Timbrez<br>ici !
+            </p>
+            <form>
+              <div class="place_adresse">
+              <p class="ligne_adresse"></p>
+              <p class="ligne_adresse"></p>
+              <p class="ligne_adresse"></p>
+              <p class="ligne_adresse"></p>
+              </div>
+              <p id="predictions">
+               Alors, heureux(ses) ? <br>
+              </p>
+              <p>
+                <input type="button" id="myButton" name="Answer" value="Réagissez !" onClick="document.querySelector('#myAnswer').innerHTML = question();">
+              </p>
+              <p>
+                <span id="myAnswer"></span>
+              </p>
+            </form>
+          </div>
+
+        </div> <!-- /end of back -->
+
+      </div> <!-- /end of card -->
+
+    </div> <!-- /end of wrapper -->
+
+    <div id="credits">Front photo by <a href="https://www.flickr.com/photos/departmentofed/14125034804/sizes/l">USDOE</a>.<br/>Back photo by <a href="https://pixabay.com/p-560719/?no_redirect">Dominik Schraudolf</a><br/><a href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a> <a href="https://teach.mozilla.org">Mozilla Learning</a>.</div>
+
+  </body>
+
+</html>

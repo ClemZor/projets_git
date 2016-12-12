@@ -1,0 +1,68 @@
+header {
+  background : linear-gradient(to top, #3B5998, #4D68A1);
+  display : flex;
+  flex-direction:row;
+  justify-content: space-around;
+  border-bottom: 1px solid #3C3B37;
+  color: #FFFFFF;
+}
+a, a:visited {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.fb_titre{
+    /*background-color: red; */
+    display: flex;
+    justify-content: flex-start;
+    align-self: baseline;
+    font-family: 'Viga', sans-serif;
+}
+
+.form_co {
+  /*background-color: green; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 12px;
+}
+.form_co form {
+  margin-left: 15px;
+  margin-right: 5px;
+}
+/* gestion placement partie connexion */
+#ajust_mdp{
+  margin-top: 14px;
+}
+#info_co  {
+  padding: 0 0 0 0;
+  display: flex;
+  align-self: flex-end;
+  margin: 0 0 0 0;
+}
+#bouton_co  {
+  margin-top: 17px;
+}
+#identifiant, #mdp  {
+  width : 150px;
+  margin-top: 3px;
+  margin-bottom: 4px;
+}
+/* design bouton_co */
+#bouton_co input  {
+  background-color: #365899;
+  border: 1px solid #29487D;
+  color: #FFFFFA;
+}
+/* design champ_co */
+#identifiant, #mdp {
+  border: 1px solid black;
+}
+#info_co{
+    color: #8CA6BB;
+    font-size: 10px;
+}
+#info_co:hover{
+  text-decoration: underline;
+}

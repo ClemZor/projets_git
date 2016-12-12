@@ -1,0 +1,31 @@
+for (var count = 0; count < 2; count++) {
+  moveForward();
+  placeBlock("planksBirch");
+}
+turnLeft();
+moveForward();
+placeBlock("planksBirch");
+turnRight();
+for (var count2 = 0; count2 < 2; count2++) {
+  moveForward();
+  placeBlock("planksBirch");
+}
+turnRight();
+moveForward();
+placeBlock("planksBirch");
+for (var count3 = 0; count3 < 2; count3++) {
+  moveForward();
+  placeBlock("planksBirch");
+}
+moveForward();
+turnRight();
+for (var count4 = 0; count4 < 3; count4++) {
+  moveForward();
+  placeBlock("planksBirch");
+}
+moveForward();
+turnRight();
+for (var count5 = 0; count5 < 3; count5++) {
+  moveForward();
+  placeBlock("planksBirch");
+}

@@ -1,0 +1,280 @@
+/* ===============================
+   Colour Palette:
+   ---------------
+   Light Cream:	#f2f3ee
+   Orange:			#d17f38
+   Yellow:			#e8c04f
+   Brown:			#4b2707
+   =============================== */
+
+/* General */
+
+body {
+   -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-image: url("../images/bg-tile.gif");
+
+}
+
+
+.container {
+  font-family: 'Open Sans', sans-serif;
+
+}
+/* Typography */
+
+h1, h2 {
+  font-family: 'Love Ya Like A Sister';
+}
+
+h1 {
+    color: #d17f38;
+    background-image: url("../images/header-divider.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    text-align: center;font-family: 'Open Sans', sans-serif;
+    height: 50px;
+    padding: 10px;
+}
+
+h1 em {
+    color : #4b2707;
+}
+
+h2 {
+    color : #d17f38;
+}
+
+h3 {
+    color : #4b2707;
+}
+
+p.lead {
+    text-align: center;
+    font-size: 25px;
+    color : #4b2707;
+}
+
+p {
+
+}
+
+a:link, a:visited {
+    color : #d17f38;
+
+}
+
+a:hover {
+
+}
+
+hr {
+    background-image: url("../images/divider.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+    border : 0;
+}
+
+
+/* Header */
+
+header nav {
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+    width: 1000px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /*background-color: red;*/
+    justify-content: center;
+
+}
+
+header nav ul li {
+    /*background-color: black;*/
+    width: 1000px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+header nav ul li a {
+    text-decoration: none;
+    color: #d17f38;
+    text-transform: uppercase;
+
+    padding-top: 100px;
+}
+
+
+}
+
+header nav ul li a:hover {
+    background-image: url("../images/tiny-donut.png");
+    background-repeat: no-repeat;
+    background-position: top;
+
+}
+
+header nav ul li#logo a {
+    color: transparent;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+}
+
+header nav ul li#logo a:hover {
+  background-image: url("../images/logo-hover.png");
+
+}
+
+
+/* Hero */
+
+#hero {
+    background-color: #e8c04f;
+    text-align: center;
+
+}
+
+#hero .container {
+    padding: 30px 0;
+}
+
+#hero .large-ribbon {
+    background-image: url("../images/fresh-whole-ingredients.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 150px;
+    top: 120px;
+    color: transparent;
+    width: auto;
+    height: 300px;
+}
+
+
+
+/* The Whole Story */
+
+#story-excerpt {
+    max-width: 400px;
+    max-height: 150px;
+    float: left;
+    margin-bottom: 100px;
+    margin-left: 250px;
+}
+
+#best-donut {
+    float: right;
+    background-image: url("../images/award.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    width : 300px;
+    padding-left: 130px;
+    margin-top: 30px;
+    margin-right: 250px;
+    margin-bottom: 100px;
+}
+/* News & Events */
+
+#articles {
+    float: left;
+    width: 500px;
+    margin-left: 200px;
+}
+
+#feature-image {
+    float: right;
+    padding-right: 100px;
+    padding-top: 20px;
+
+}
+
+#news-events article {
+    font-size: 15px;
+    padding-left: 50px;
+}
+
+#news-events article.news {
+  background-image: url("../images/icon-news.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+
+
+}
+
+#news-events article.event {
+  background-image: url("../images/icon-calendar.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+
+}
+
+#news-events header time {
+  color: #d17f38;
+
+}
+
+#news-events section.excerpt {
+
+}
+
+#news-events footer {
+
+}
+
+
+/* Footer */
+
+footer.main {
+    background-color: #4b2707;
+
+}
+
+footer.main a:hover {
+
+}
+
+#uncopyright, #credits {
+
+}
+
+#uncopyright {
+  background-image: url("../images/icon-recycle.png");
+  background-repeat: no-repeat;
+  background-position: left;
+
+}
+
+#credits {
+  background-image: url("../images/icon-apple.png");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+
+/* Force Elements to Self Clear its Children: http://css-tricks.com/snippets/css/clear-fix/ */
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	}
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
