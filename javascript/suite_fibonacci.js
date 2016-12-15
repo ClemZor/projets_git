@@ -2,7 +2,9 @@
 
 
 function main () {
-    calculerFibonnacci(21);
+    var suite_fibo = calculerFibonnacci(21);
+    console.log(suite_fibo);
+    
 }
 
 function calculerFibonnacci(nombre) { 
@@ -17,6 +19,7 @@ function calculerFibonnacci(nombre) {
         nb_petit=nb_grand;
         nb_grand=resultat;     
     }
+    return true;
 }
 
 

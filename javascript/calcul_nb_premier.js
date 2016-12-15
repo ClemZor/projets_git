@@ -6,7 +6,7 @@ Ainsi, 1 n'est pas premier car il n'a qu'un seul diviseur entier positif ;
 */
 
 function main () {
-    calculPremier(241);
+    calculPremier(267914206);
 }
 
 function calculPremier ( nombre) {
