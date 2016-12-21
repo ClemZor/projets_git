@@ -87,7 +87,6 @@ function gererChampTexte(acces) {   //gère l'acces au champ texte à remplir
         $('#task').prop('disabled', acces);
 }
 
-
 $(document).ready(function() {
     // redonne l'accès à input et bouton play
     gererChampTexte(false);
